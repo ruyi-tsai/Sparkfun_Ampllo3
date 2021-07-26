@@ -58,6 +58,7 @@ cd D:/TinyML/sf_TinyML/Sparkfun_Ampllo3/SparkFun_Edge_SDK/apollo3_scripts
 python uart_wired_update.py COM6 -f example1_edge_test_wire.bin
 ```
 COM6 is your device name in Windows
+![image](https://github.com/ruyi-tsai/Sparkfun_Ampllo3/blob/main/test_image1.png)
 ######  4. press and release rest button
 
 ## step 6 : build person detection  project
@@ -81,3 +82,5 @@ python dump_serial.py
 ```
 COM_PORT = 'COM6'    # 指定通訊埠名稱
 BAUD_RATES = 115200   # 設定傳輸速率
+
+![image](https://github.com/ruyi-tsai/Sparkfun_Ampllo3/blob/main/person_detection.png)
