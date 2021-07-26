@@ -50,14 +50,14 @@ cp $PROJ_BSP/examples/example1_edge_test/gcc/bin/example1_edge_test.bin  .
 then it will output example1_edge_test_wire.bin
 
 ## step 5 : burn fw to Sparkfun Edge board
-###  1. hold down button 14
-###  2. press and release rest button
-###  3. enter command line (on anaconda powershell prompt)
+######  1. hold down button 14
+######  2. press and release rest button
+######  3. enter command line (on anaconda powershell prompt)
 ```
 cd D:/TinyML/sf_TinyML/Sparkfun_Ampllo3/SparkFun_Edge_SDK/apollo3_scripts
 python uart_wired_update.py COM6 -f example1_edge_test_wire.bin
 ```
 COM6 is your device name in Windows
-###  4. press and release rest button
+######  4. press and release rest button
 
 
