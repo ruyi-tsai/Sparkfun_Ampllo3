@@ -73,4 +73,11 @@ run  anaconda powershell prompt
 cd D:/TinyML/sf_TinyML/Sparkfun_Ampllo3/SparkFun_Edge_SDK/apollo3_scripts
 python uart_wired_update.py COM6 -f person_detection_wire.bin
 ```
-
+## step 7 : test person detect
+run  anaconda powershell prompt
+```
+cd D:/to_bitmap
+python dump_serial.py
+```
+COM_PORT = 'COM6'    # 指定通訊埠名稱
+BAUD_RATES = 115200   # 設定傳輸速率
