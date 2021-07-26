@@ -60,4 +60,17 @@ python uart_wired_update.py COM6 -f example1_edge_test_wire.bin
 COM6 is your device name in Windows
 ######  4. press and release rest button
 
+## step 6 : build person detection  project
+```
+cd /media/sf_TinyML/Sparkfun_Ampllo3/tensorflow
+sudo make -f tensorflow/lite/micro/tools/make/Makefile  TARGET=sparkfun_edge  person_detection_bin
+cp tensorflow/lite/micro/tools/make/gen/sparkfun_edge_cortex-m4/bin/person_detection.bin /media/sf_TinyML/Sparkfun_Ampllo3/SparkFun_Edge_SDK/apollo3_scripts
+cd /media/sf_TinyML/Sparkfun_Ampllo3/SparkFun_Edge_SDK/apollo3_scripts
+./build_fw.sh person_detection.bin
+```
+run  anaconda powershell prompt
+```
+cd D:/TinyML/sf_TinyML/Sparkfun_Ampllo3/SparkFun_Edge_SDK/apollo3_scripts
+python uart_wired_update.py COM6 -f person_detection_wire.bin
+```
 
